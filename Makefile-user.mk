@@ -27,13 +27,13 @@
 ## MacOS / Linux:
  COM_PORT = /dev/ttyUSB0
 
-## Com port speed
- COM_SPEED	= 115200
+## Com port speed, Default 115200
+ COM_SPEED	= 230400
 
 ## Configure flash parameters (for ESP12-E and other new boards):
  SPI_MODE = dio
 
 ## SPIFFS options
-DISABLE_SPIFFS = 1
-# SPIFF_FILES = files
-
+DISABLE_SPIFFS = 0
+SPIFF_FILES = files
+SPIFF_SIZE = 51200 ## 50 KBytes
